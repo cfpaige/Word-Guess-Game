@@ -1,2 +1,3 @@
-# Word-Guess-Game
-JavaScript homework (week 2)
+## Word Guess Game ##
+
+The overambitious JavaScript project I don't seem to be able to finish.
