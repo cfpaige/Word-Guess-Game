@@ -1,0 +1,91 @@
+body {
+    background-image: url("../images/background-papyrus.png");
+}
+
+.grid-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  grid-template-rows: 1fr auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+#game-header {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding: 10px;
+}
+
+#game-area {
+  min-height: 550px;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  background-color: white;
+  padding: 10px;
+}
+
+#game-sidebar {
+  min-height: 550px;
+  grid-row-start: 2;
+  grid-column-start: 2;
+  background-color: white;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+#games-played {
+  font-weight: bold
+}
+
+#games-won {
+  font-weight: bold
+}
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+
+#game-word {
+    margin: 1em auto 0.5em auto;
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+    overflow: hidden;
+}
+
+#game-alpha {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0 1em;
+    overflow: hidden;
+}
+
+#hint-letter {
+  display: none;
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+#new-game {
+  margin: 2em 0.5em 0.5em 0;
+  display: none;
+}
+
+#give-up {
+  margin: 2em 0.5em 0.5em 0;
+  display: inline;
+}
+
+#get-hint {
+  margin: 2em 0.5em 0.5em 0;
+  display: inline;
+}

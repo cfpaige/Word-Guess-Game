@@ -1,33 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Word Guess Game</title>
+  <link href='assets/css/reset.css' rel='stylesheet' type='text/css'>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href='assets/css/style.css' rel='stylesheet' type='text/css'>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Word Guess Game</title>
-    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+</head>
+
+<body>
+
+  <main id="game-wrapper" class="grid-container">
+    <h1 id="game-header" class="grid-item">Word Guess Game</h1>
+    <section id="game-area" class="grid-item">
+      <section id="game-word">______</section>
+      <section id="game-alpha">
+        <h4 id="first">Your guesses:</h4>
+        <h2 id="guesses" style="color:lightgray">(Press any letter to begin.)</h2>
+        <h4 id="third">Lives left:</h4>
+        <h2 id="lives">10</h2>
+        <button id="give-up" type="button" class="btn btn-warning">Show word</button>
+        <button id="get-hint" type="button" class="btn btn-info">Get hint</button>
+        <button id="new-game" type="button" class="btn btn-info">Play again?</button>
     
-    <style>
-        body, html {
-          height: 100%;
-          margin: 0;
-        }
-        
-        .bg {
-          background-image: url("assets/images/under-construction.png");
-          height: 100%; 
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-        }
+        <!-- <div class="button-wrapper">
+              <input class="hov" id="a" type="button" value="a" />
+              <input class="hov" id="b" type="button" value="b" />
+              <input class="hov" id="c" type="button" value="c" />
+              <input class="hov" id="d" type="button" value="d" />
+              <input class="hov" id="e" type="button" value="e" />
+              <input class="hov" id="f" type="button" value="f" />
+              <input class="hov" id="g" type="button" value="g" />
+              <input class="hov" id="h" type="button" value="h" />
+              <input class="hov" id="i" type="button" value="i" />
+              <input class="hov" id="j" type="button" value="j" />
+              <input class="hov" id="k" type="button" value="k" />
+              <input class="hov" id="l" type="button" value="l" />
+              <input class="hov" id="m" type="button" value="m" />
+              <input class="hov" id="n" type="button" value="n" />
+              <input class="hov" id="o" type="button" value="o" />
+              <input class="hov" id="p" type="button" value="p" />
+              <input class="hov" id="q" type="button" value="q" />
+              <input class="hov" id="r" type="button" value="r" />
+              <input class="hov" id="s" type="button" value="s" />
+              <input class="hov" id="t" type="button" value="t" />
+              <input class="hov" id="u" type="button" value="u" />
+              <input class="hov" id="v" type="button" value="v" />
+              <input class="hov" id="w" type="button" value="w" />
+              <input class="hov" id="x" type="button" value="x" />
+              <input class="hov" id="y" type="button" value="y" />
+              <input class="hov" id="z" type="button" value="z" />
+            </div> -->
+      </section>
+    </section>
+    
+    <aside id="game-sidebar" class="grid-item">
+      <ul>
+        <li>Games: <span id="games-played">0</span></li>
+        <li>Wins: <span id="games-won">0</span></li>
+      </ul>
+      <p id="hint-letter">A</p>
+    </aside>
+    
+    </main>
 
-        </style>
-        </head>
-        <body>
-        
-        <div class="bg"></div>
-        
-        </body>
-        </html>
-        
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+    integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+    crossorigin="anonymous"></script>
+  <script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
