@@ -1,3 +1,3 @@
 ## Word Guess Game ##
 
-The overambitious JavaScript project I keep tinkering with.
+A classic hangman game built in vanilla JavaScript.

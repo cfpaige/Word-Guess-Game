@@ -27,6 +27,7 @@ body {
 }
 
 #game-sidebar {
+  position: relative;
   min-height: 550px;
   grid-row-start: 2;
   grid-column-start: 2;
@@ -88,4 +89,25 @@ h2 {
 #get-hint {
   margin: 2em 0.5em 0.5em 0;
   display: inline;
+}
+
+#game-modes {
+  position: absolute;
+  bottom: 2em;
+}
+
+#modes-header {
+  font-weight: bold;
+}
+
+#classic-btn {
+  margin: 1em 0 0.5em 0;
+}
+
+#gentle-btn {
+  margin: 0.5em 0;
+}
+
+#absurd-btn {
+  margin: 0.5em 0 0 0;
 }

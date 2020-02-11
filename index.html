@@ -24,38 +24,9 @@
         <h2 id="guesses" style="color:lightgray">(Press any letter to begin.)</h2>
         <h4 id="third">Lives left:</h4>
         <h2 id="lives">10</h2>
-        <button id="give-up" type="button" class="btn btn-warning">Show word</button>
-        <button id="get-hint" type="button" class="btn btn-info">Get hint</button>
+        <button id="give-up" type="button" class="btn btn-warning">Give up</button>
+        <button id="get-hint" type="button" class="btn btn-info">Hint</button>
         <button id="new-game" type="button" class="btn btn-info">Play again?</button>
-    
-        <!-- <div class="button-wrapper">
-              <input class="hov" id="a" type="button" value="a" />
-              <input class="hov" id="b" type="button" value="b" />
-              <input class="hov" id="c" type="button" value="c" />
-              <input class="hov" id="d" type="button" value="d" />
-              <input class="hov" id="e" type="button" value="e" />
-              <input class="hov" id="f" type="button" value="f" />
-              <input class="hov" id="g" type="button" value="g" />
-              <input class="hov" id="h" type="button" value="h" />
-              <input class="hov" id="i" type="button" value="i" />
-              <input class="hov" id="j" type="button" value="j" />
-              <input class="hov" id="k" type="button" value="k" />
-              <input class="hov" id="l" type="button" value="l" />
-              <input class="hov" id="m" type="button" value="m" />
-              <input class="hov" id="n" type="button" value="n" />
-              <input class="hov" id="o" type="button" value="o" />
-              <input class="hov" id="p" type="button" value="p" />
-              <input class="hov" id="q" type="button" value="q" />
-              <input class="hov" id="r" type="button" value="r" />
-              <input class="hov" id="s" type="button" value="s" />
-              <input class="hov" id="t" type="button" value="t" />
-              <input class="hov" id="u" type="button" value="u" />
-              <input class="hov" id="v" type="button" value="v" />
-              <input class="hov" id="w" type="button" value="w" />
-              <input class="hov" id="x" type="button" value="x" />
-              <input class="hov" id="y" type="button" value="y" />
-              <input class="hov" id="z" type="button" value="z" />
-            </div> -->
       </section>
     </section>
     
@@ -65,6 +36,12 @@
         <li>Wins: <span id="games-won">0</span></li>
       </ul>
       <p id="hint-letter">A</p>
+      <ul id="game-modes">
+        <li>Play Modes</li>
+        <li><button id="classic-btn" class="btn btn-info active" role="button" aria-pressed="true">Classic</button></li>
+        <li><button id="gentle-btn" class="btn btn-secondary" disabled>Gentle</button></li>
+        <li><button id="absurd-btn" class="btn btn-secondary" disabled>Absurd</button></li>
+      </ul>
     </aside>
     
     </main>
@@ -75,6 +52,7 @@
     integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
     crossorigin="anonymous"></script>
   <script src="assets/javascript/game.js"></script>
+  <script src="assets/javascript/gentle.js"></script>
 
 </body>
 
